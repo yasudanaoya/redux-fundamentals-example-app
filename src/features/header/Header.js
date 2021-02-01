@@ -14,6 +14,7 @@ const Header = () => {
     if (e.which === 13 && trimmedText) {
       // Create the thunk function and immediately dispatch it
       dispatch(saveNewTodo(trimmedText))
+      setText('')
     }
   }
 
